@@ -8,13 +8,13 @@ import { FiMessageCircle } from "react-icons/fi";
 import { useState } from "react";
 
 function nav() {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState('#');
   return (
     <nav>
-      <a href="#" className={activeNav === '"#' ? 'active' : ''}>
+      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
         <AiOutlineHome />
       </a>
-      <a href="#about">
+      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#' ? 'active' : ''}>
         <AiOutlineUser />
       </a>
       <a href="#experience">
