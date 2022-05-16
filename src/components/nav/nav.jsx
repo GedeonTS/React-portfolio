@@ -8,22 +8,22 @@ import { FiMessageCircle } from "react-icons/fi";
 import { useState } from "react";
 
 function nav() {
-  const [activeNav, setActiveNav] = useState('#');
+  const [activeNav, setActiveNav] = useState('#')
   return (
     <nav>
       <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
         <AiOutlineHome />
       </a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#' ? 'active' : ''}>
+      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>
         <AiOutlineUser />
       </a>
-      <a href="#experience">
+      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}>
         <BiBook />
       </a>
-      <a href="#services">
+      <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}>
         <RiServiceLine />
       </a>
-      <a href="#contact">
+      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>
         <FiMessageCircle />
       </a>
     </nav>
