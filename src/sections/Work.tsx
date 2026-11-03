@@ -100,7 +100,7 @@ export function Work() {
       <SectionLabel index="02">Selected work</SectionLabel>
       <div className="mb-16 flex flex-col justify-between gap-8 md:flex-row md:items-end">
         <RevealText
-          text="Products I've built, secured and shipped."
+          text="Products I've built, and teams I've brought my expertise to."
           className="max-w-4xl font-display text-[clamp(2.4rem,6vw,5.5rem)] font-semibold leading-[0.95] tracking-[-0.03em]"
         />
         <Reveal delay={0.2}>
